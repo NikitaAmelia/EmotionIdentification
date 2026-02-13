@@ -124,12 +124,14 @@ This project was developed as part of a **Computer Vision & AI portfolio** to de
 
 ---
 
+
 ## 👩‍💻 Author
 
-Created as a personal AI portfolio project.
+Nikita Amelia Valencia  
+Machine Learning & Data Science Enthusiast
 
 ---
 
-## ⭐ Support
+## 📜 License
 
-If you like this project, consider giving it a ⭐ on GitHub!
+This project is for educational and portfolio purposes.
