@@ -1,25 +1,34 @@
+
 # 🎭 Emotion Identification using Deep Learning
 
-A **Computer Vision project** that performs **real-time facial emotion detection** using a webcam.  
-This application detects faces from a live camera feed and predicts the **dominant human emotion** using Deep Learning models.
+A **Computer Vision project** that performs facial emotion detection using a browser camera and Deep Learning.  
+This application captures a facial image and predicts the **dominant human emotion** using DeepFace.
 
-The project demonstrates the implementation of **Face Detection + Emotion Recognition** using Python, OpenCV, and DeepFace.
+The project demonstrates the implementation of **Face Detection + Emotion Recognition** using Python, OpenCV, TensorFlow, and DeepFace, with a web-based interface built using Streamlit.
+
+---
+
+## 🔗 Live Demo (Streamlit App)
+
+👉 [https://emotionidentification.streamlit.app/]
 
 ---
 
 ## 🚀 Features
 
-- 📷 Real-time webcam face detection
+- 📷 Capture facial images using a browser camera
 - 😊 Automatic emotion classification
 - 🧠 Deep Learning–based emotion analysis
-- 🔴 Live bounding box and emotion label display
-- ⚡ Simple and lightweight implementation
+- 🔍 Face detection and emotion prediction
+- 📊 Display emotion analysis results through a web interface
+- 🌐 Web-based application accessible through a browser
 
 ---
 
 ## 🧠 Technologies Used
 
 - Python
+- Streamlit
 - OpenCV
 - DeepFace
 - TensorFlow / Keras
@@ -29,13 +38,12 @@ The project demonstrates the implementation of **Face Detection + Emotion Recogn
 
 ## 📂 Project Structure
 
-```
+```text
 EmotionIdentification/
 │
-├── emotion.py
+├── app.py
 ├── requirements.txt
-├── haarcascade_frontalface_default.xml
-├── .gitignore
+├── packages.txt
 └── README.md
 ```
 
@@ -46,17 +54,17 @@ EmotionIdentification/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/EmotionIdentification.git
-cd EmotionIdentification
+git clone https://github.com/nikitaamelia/emotionidentification.git
+cd emotionidentification
 ```
 
-### 2. Create virtual environment
+### 2. Create a virtual environment
 
 ```bash
 python -m venv venv
 ```
 
-Activate environment:
+Activate the environment:
 
 **Windows**
 ```bash
@@ -78,21 +86,25 @@ pip install -r requirements.txt
 
 ## ▶️ How to Run
 
-Run the application:
+Run the application locally:
 
 ```bash
-python emotion.py
+streamlit run app.py
 ```
 
-- The webcam will open automatically
-- Faces will be detected in real time
-- Predicted emotion will appear above each detected face
+- Open the application in your browser.
+- Allow camera access when prompted.
+- Capture an image using the browser camera.
+- Click **Analyze Emotions** to process the captured image.
+- View the detected face and emotion analysis results.
 
-Press **Q** to exit the application.
+**Note:** This application analyzes captured images rather than processing a continuous live video feed.
 
 ---
 
 ## 🎯 Supported Emotions
+
+DeepFace analyzes facial expressions and identifies emotion categories such as:
 
 - Happy
 - Sad
@@ -104,34 +116,49 @@ Press **Q** to exit the application.
 
 ---
 
+## ☁️ Deployment
+
+This application can be deployed using **Streamlit Community Cloud**.
+
+1. Push the project files to a GitHub repository.
+2. Visit [Streamlit Community Cloud](https://share.streamlit.io/).
+3. Create a new application and select the repository and branch.
+4. Set the main file path to `app.py`.
+5. Deploy the application and wait for the installation process to finish.
+
+---
+
 ## 💡 Project Purpose
 
 This project was developed as part of a **Computer Vision & AI portfolio** to demonstrate skills in:
 
 - Image processing
+- Face detection
 - Deep Learning integration
-- Real-time video analysis
-- AI application development
+- Facial emotion recognition
+- Web application development using Streamlit
+- Deployment of AI applications
 
 ---
 
 ## 📌 Future Improvements
 
-- Emotion tracking history
-- FPS performance optimization
-- Web-based interface
+- Continuous real-time emotion detection
+- Emotion recognition history
+- Model inference performance optimization
 - Emotion analytics dashboard
+- Improved face detection and visualization
 
 ---
 
-
 ## 👩‍💻 Author
 
-Nikita Amelia Valencia  
+Nikita Amelia Valencia
+
 Machine Learning & Data Science Enthusiast
 
 ---
 
 ## 📜 License
 
-This project is for educational and portfolio purposes.
+This project is intended for educational and portfolio purposes.
